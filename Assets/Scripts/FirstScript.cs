@@ -18,7 +18,7 @@ public class FirstScript : MonoBehaviour
         Vector2 pos = transform.position;
         pos.x += speed;
         transform.position = pos;
-
+        //test
         if (pos.x > 10 || pos.x < -10)
         {
             speed = speed * -1;
