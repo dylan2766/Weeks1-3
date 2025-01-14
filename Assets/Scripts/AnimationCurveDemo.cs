@@ -5,7 +5,7 @@ using UnityEngine;
 public class AnimationCurveDemo : MonoBehaviour
 {
     public AnimationCurve curve;
-
+    //map
     [Range(0, 1)] public float t;
 
     // Start is called before the first frame update
