@@ -9,6 +9,7 @@ public class FirstScript : MonoBehaviour
 
     public SpriteRenderer spriteRenderer;
     public Sprite[] sprites;
+    public Spawner thingThatSpawnedMe;
 
     // Start is called before the first frame update
     void Start()
