@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c1e5f3a340220c4482fc4ba8c8a0e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotSpeed: -60
+  rotSpeed: 60
   PosY: -4
   mousePos: {x: 0, y: 0}
 --- !u!1 &237837903

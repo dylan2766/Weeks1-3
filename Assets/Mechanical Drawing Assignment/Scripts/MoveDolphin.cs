@@ -7,7 +7,7 @@ public class MoveDolphin : MonoBehaviour
     //speed variable
     public float rotSpeed;
 
-    //Set dolphin y position
+    //Set dolphins y position
     public float PosY;
 
     //Mouse position variable
