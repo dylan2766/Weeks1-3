@@ -32,7 +32,7 @@ public class MoveDolphin : MonoBehaviour
         //}
         
         //When dolphin reaches an angle that is less than or equal to 180 it resets angle to 0. Dolphins X axis is moved to where the mousePosition is.
-        if (transform.localEulerAngles.z < 180)
+        if (transform.localEulerAngles.z < 160)
         {
             mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mousePos.y = PosY;
