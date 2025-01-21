@@ -43,11 +43,21 @@ public class BounceObject : MonoBehaviour
             isOn = true;
         }
 
-        if(isOn == true)
+        Vector3 rot = transform.eulerAngles;
+        Vector3 jump = transform.position;
+
+        if (isOn == true)
         {
             t += Time.deltaTime;
-            transform.Translate(0, jumpCurve.Evaluate(t) * 0.05f, 0);
-            transform.eulerAngles = Vector3.forward * rotationCurve.Evaluate(t);
+           // transform.Translate(0, jumpCurve.Evaluate(t) * 0.04f, 0);
+
+            jump.y += jumpCurve.Evaluate(t) * 0.05f;
+            transform.position = jump;
+
+            rot.z = rotationCurve.Evaluate(t) * 360;
+            transform.eulerAngles = rot;
+
+            //transform.Rotate(0, 0, rotationCurve.Evaluate(t));
             if (t > 1)
             {
                 t = 0;
