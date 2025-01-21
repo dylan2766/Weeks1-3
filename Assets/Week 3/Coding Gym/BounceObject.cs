@@ -6,6 +6,8 @@ using UnityEngine;
 public class BounceObject : MonoBehaviour
 {
     public AnimationCurve jumpCurve;
+    public AnimationCurve rotationCurve;
+
     [Range(0, 1)] public float t;
     public float speed;
 
@@ -45,6 +47,7 @@ public class BounceObject : MonoBehaviour
         {
             t += Time.deltaTime;
             transform.Translate(0, jumpCurve.Evaluate(t) * 0.05f, 0);
+            transform.eulerAngles = Vector3.forward * rotationCurve.Evaluate(t);
             if (t > 1)
             {
                 t = 0;
