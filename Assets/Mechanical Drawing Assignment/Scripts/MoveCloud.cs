@@ -28,6 +28,7 @@ public class MoveCloud : MonoBehaviour
         //move cloud to the left of the screen
         cloudPos += speed * Time.deltaTime;
 
+        //if cloud is on or past the end point reset cloud to start point
         if (cloudPos >= 1)
         {
             cloudPos = 0;

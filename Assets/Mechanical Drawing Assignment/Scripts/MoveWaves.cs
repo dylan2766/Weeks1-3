@@ -6,6 +6,7 @@ public class MoveWaves : MonoBehaviour
 {
     //speed variable
     public float speed;
+
     //range
     [Range(0,1)] public float waveRange;
 
